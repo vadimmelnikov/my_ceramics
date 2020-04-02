@@ -1,0 +1,43 @@
+$desktop-xl = 1500px
+
+$desktop-m = 1300px
+
+$desktop-s = 1200px
+
+$mobile = 960px
+
+$tablet = 768px
+
+$mobile-xl = 480px
+
+$mobile-s = 375px
+
+media-mobile()
+  @media(max-width: $mobile)
+    {block}
+
+
+media-desktop-xl()
+  @media(max-width: $desktop-xl)
+    {block}
+
+media-desktop-s()
+  @media(max-width: $desktop-s)
+    {block}
+
+media-desktop-m()
+  @media(max-width: $desktop-m)
+    {block}
+
+media-tablet()
+  @media(max-width: $tablet)
+    {block}
+
+
+media-mobile-s()
+  @media(max-width: $mobile-s)
+    {block}
+
+media-mobile-xl()
+  @media(max-width: $mobile-xl)
+    {block}

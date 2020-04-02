@@ -1,0 +1,20 @@
+@keyframes scaleOutFromCenter {
+  0% {
+    transform: scaleX(0);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(1);
+  }
+}
+
+.scaleOutFromCenter {
+  transform-origin: center;
+  animation-name: scaleOutFromCenter;
+}

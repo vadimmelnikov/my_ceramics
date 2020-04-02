@@ -1,0 +1,23 @@
+aspect-ratio(width, height)
+  position relative
+  &:before
+    display block
+    content ''
+    width 100%
+    padding-top (height / width ) * 100%
+
+  & > *
+    position absolute
+    top 0
+    right 0
+    left 0
+    bottom 0
+
+hoverSupport()
+  //@media (hover: hover)
+  // For cover all browsers (0\0 = IE, min-moz = Firefox)
+  @media (hover:hover), (min-width:0\0), (min--moz-device-pixel-ratio:0)
+    &:hover
+      {block}
+
+

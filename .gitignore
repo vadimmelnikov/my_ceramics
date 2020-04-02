@@ -1,0 +1,17 @@
+.idea/
+public/
+build/*
+node_modules/
+storybook-static
+npm-debug.log
+.DS_Store
+**/.DS_Store
+.powenv
+.env*
+!.env.sample
+TODO found
+TODO*
+DOCS
+!.keep
+!.gitkeep
+.vscode
