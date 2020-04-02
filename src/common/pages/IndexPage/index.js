@@ -1,19 +1,19 @@
-import React, { useRef, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
 
 import Meta from '@components/Meta';
-import { MOBILE_WIDTH } from '@constants';
+// import { MOBILE_WIDTH } from '@constants';
 
 import styles from './styles.styl';
 
 const IndexPage = inject('MainStore')(
-  observer(({ MainStore, isVisiblePage }) => {
+  observer(({ MainStore }) => {
     return (
-      <Fragment>
+      <div className={styles.root}>
         <Meta />
         <p>Home page</p>
-      </Fragment>
+      </div>
     );
   }),
 );
