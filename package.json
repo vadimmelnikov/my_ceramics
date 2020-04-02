@@ -2,14 +2,14 @@
   "name": "TEST",
   "version": "0.1.1",
   "description": "TEST front-end",
-  "repository": "https://github.com/vadimmelnikov/my_ceramics",
-  "homepage": "https://github.com/vadimmelnikov/my_ceramics",
+  "repository": "http://github.com/vadimmelnikov/my_ceramics",
+  "homepage": "http://github.com/vadimmelnikov/my_ceramics",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "BUNDLE_API_ROOT=/v1 webpack --mode production",
     "prettier": "prettier --write src/**/*.js",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "husky": {
