@@ -23,7 +23,7 @@ module.exports = (env, argv = { mode: 'development' }) => {
     entry: { main: './src/index.js' },
 
     output: {
-      path: path.resolve(__dirname, 'build'),
+      path: path.resolve(__dirname, 'docs'),
       publicPath: '/',
       filename: isProduction ? '[name].js' : '[name].[contenthash].js',
       chunkFilename: isProduction
@@ -159,7 +159,7 @@ module.exports = (env, argv = { mode: 'development' }) => {
         // fetch: 'exports-loader?self.fetch!whatwg-fetch'
         fetch: 'whatwg-fetch',
       }),
-      new CleanWebpackPlugin('build', {}),
+      new CleanWebpackPlugin('docs', {}),
       new MiniCssExtractPlugin({
         filename: isProduction ? 'style.[contenthash].css' : '[name].css',
         chunkFilename: isProduction ? '[id].[contenthash].css' : '[id].css',
@@ -218,7 +218,7 @@ module.exports = (env, argv = { mode: 'development' }) => {
         },
         {
           from: './src/favicons',
-          to: path.resolve(process.cwd(), 'build'),
+          to: path.resolve(process.cwd(), 'docs'),
           toType: 'dir',
         },
       ]),
@@ -227,7 +227,7 @@ module.exports = (env, argv = { mode: 'development' }) => {
     devServer: {
       host: '0.0.0.0',
       port: 3000,
-      contentBase: path.resolve(process.cwd(), 'build'),
+      contentBase: path.resolve(process.cwd(), 'docs'),
       compress: true,
       historyApiFallback: true,
     },

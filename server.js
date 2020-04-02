@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.resolve(__dirname, 'build')));
+app.use(express.static(path.resolve(__dirname, 'docs')));
 
 // app.get('/', (req, res) => res.send('Hello World!'));
 
