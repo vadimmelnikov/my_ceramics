@@ -40,7 +40,7 @@
     "classnames": "^2.2.6",
     "core-js": "^2.6.5",
     "custom-event-polyfill": "^1.0.7",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "intersection-observer": "^0.7.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
